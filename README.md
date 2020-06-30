@@ -1,30 +1,25 @@
-# y
+## mall 
 
-> A Vue.js project
+### mall 项目简介
 
-## Build Setup
+mall 商城项目 包含 前台商城系统及后台管理系统，基于Spring Boot + MyBatis 实现。
 
-``` bash
-# install dependencies
-npm install
+前台商城系统包含首页，商品展示，购物车等模块。
 
-# serve with hot reload at localhost:8080
-npm run dev
+后台管理系统包含商品管理，订单管理等模块。
 
-# build for production with minification
-npm run build
+### mall 相关技术
 
-# build for production and view the bundle analyzer report
-npm run build --report
+|       技术       |  版本  |         说明         |
+| :--------------: | :----: | :------------------: |
+|   Spring Boot    | 2.1.3  |   容器 + MVC 框架    |
+| Spring Security  | 5.1.4  |    认证和授权框架    |
+|     MyBatis      | 3.4.6  |       ORM 框架       |
+| MyBatisGenerator | 1.3.3  |    数据层代码生成    |
+|    PageHelper    | 5.1.8  | MyBatis 物理分页插件 |
+|      Druid       | 1.1.10 |     数据库连接池     |
+|    Swagger-UI    | 2.7.0  |     文档生产工具     |
+|       JWT        | 0.9.0  |     JWT 登录支持     |
+|      Lombok      | 1.18.6 |   简化对象封装工具   |
 
-# run unit tests
-npm run unit
 
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
