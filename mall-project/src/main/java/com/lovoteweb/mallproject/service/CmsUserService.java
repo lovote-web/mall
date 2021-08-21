@@ -15,6 +15,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -73,7 +74,7 @@ public class CmsUserService implements CmsUserServiceImpl {
     @Override
     public List<UmsPermission> getPermissionList(Long adminId) {
 
-        List<UmsPermission> umsPermissions = null;
+        List<UmsPermission> umsPermissions = new LinkedList<>();
         UmsUserpermissionrelationExample example = new UmsUserpermissionrelationExample();
         example.createCriteria().andUidEqualTo(adminId);
 
